@@ -40,7 +40,7 @@ function Get-AvailableNodes {
             # Save the functions for cleanup later
             $libFunctions += Get-ChildItem function: | Where-Object { $currentFunctions -notcontains $_ }
         }
-        Set-SelfSignedCerts -ValidateCertificate $false
+        Disable-SelfSignedCerts
     }
 
     Process {

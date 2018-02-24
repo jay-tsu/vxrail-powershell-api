@@ -41,7 +41,7 @@ function Get-SystemHealth {
             # Save the functions for cleanup later
             $libFunctions += Get-ChildItem function: | Where-Object { $currentFunctions -notcontains $_ }
         }
-        Set-SelfSignedCerts -ValidateCertificate $true
+        Disable-SelfSignedCerts
     }
 
     Process {
@@ -63,3 +63,5 @@ function Get-SystemHealth {
         }
     }
 }
+
+# Get-SystemHealth -server 10.62.81.84 -username user -password password
