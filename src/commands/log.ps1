@@ -80,4 +80,4 @@ function New-Log {
     }
 }
 
-New-Log -server 10.62.81.84 -username user -password password -type iDRAC, VxManager
+# New-Log -server 10.62.81.84 -username user -password password -type iDRAC, VxManager

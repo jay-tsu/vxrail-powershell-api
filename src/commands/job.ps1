@@ -74,4 +74,4 @@ function Get-Job {
 }
 
 # Get-Job -server 10.62.81.84 -username user -password password 
-Get-Job -server 10.62.81.84 -username user -password password -uuid "a23a6f69-391a-4edb-8877-7a3cbb89542b"
+# Get-Job -server 10.62.81.84 -username user -password password -uuid "a23a6f69-391a-4edb-8877-7a3cbb89542b"
