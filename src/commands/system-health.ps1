@@ -53,7 +53,7 @@ function Get-SystemHealth {
             Invoke-RestMethod -Method Get -Uri $uri -Headers $headers
         }
         catch {
-            ExceptionHandler -Exception $_.Exception
+            Trace-Exception -Exception $_.Exception
         }
     }
 
